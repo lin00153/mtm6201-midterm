@@ -1,0 +1,310 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+/* my styles */
+
+body {
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px; /*this is 1em*/
+    line-height: 1.5;
+    color: black;
+}
+
+h1 {
+    font-size: 71px;
+    line-height: 106px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 18px;
+    color: #6C6A03;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+/* h3, h4...etc */
+
+p {
+    margin-bottom: 1em; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    background: #222222;
+    padding-top: 14px;
+}
+
+.container {
+    padding: 14px;
+}
+/*styles when clicking on*/
+nav a:link, 
+nav a:visited {
+    font-size: 18px;
+    color:#c78b07;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    padding-top: 17px;
+    padding-bottom: 17px;
+} 
+
+nav .current a:link,
+nav .current a:visited {
+    color: black;
+    background:#c78b07;
+
+}
+
+/*navigation part*/
+nav {
+    background: black;
+}
+
+nav .container {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+
+}
+
+nav li{
+    margin-left: 5em;
+}
+
+ .logo {
+     margin-top: 1em;
+     margin-bottom: 2em;
+     margin-left: 2em;
+	 max-width: 13%;
+	 padding-top: 10px;
+	 padding-bottom: 5px;
+     background: none;
+ }
+
+nav .current a:link,
+nav .current a:visited {
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color:black;
+    background:#c78b07;
+}
+/*header-section*/
+.header-welcome {
+    width: 100%;
+    height: 422px;
+    background-image: url(images/pizzahome.jpg);
+    background-size: cover;
+    background-position: center;
+	padding-top: 150px;
+	text-align: center;
+
+}
+.header-welcome .container {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 422px;
+    width: 1000px;
+}
+
+.header-welcome .button {
+	display: inline-block;
+    background-color:#c78b07;
+    color:black;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+	padding: 24px;
+}
+/*about us*/
+.section-about .container{
+    background-color: #ffe6ac;
+    height: 330px;  
+}
+
+.about-us-image  {
+    float: left;
+    width: 200px; 
+    height: 350px;
+    padding-top: 14px;
+    padding-right: 14px;
+	margin-bottom: 14px;
+}
+
+.about-us-text {
+    color: #6C6A03;
+    padding-right: 80px;
+}
+
+/*menu section*/
+.section-menu {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.section-menu .container {
+    display: grid;
+    grid-template-rows: 450px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 14px;
+}
+
+.pizza1,
+.pizza2,
+.pizza3 {
+    background-color: #ffe6ac; 
+    margin-bottom: 14px;  
+    text-align: center;
+    padding-top: 14px;
+}
+
+.section-menu .button {
+    background-color:#B34216;
+    color:white;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 14px;
+    padding: 10px;
+}
+
+/*contact us section*/
+.box{
+    width: 980px;
+    height: 350px;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+.map {
+    position: absolute;
+    right: 20px;  
+    top: 200px; 
+    max-width: 80%; 
+    }
+
+#fname, #email, #message {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+#send {
+    font-size: 25px;
+    line-height: 1.5;
+    color: white;
+    background-color: #B34216; 
+    border-radius: 70%;
+    display: block;
+    margin-left:29%; 
+}
+
+/*skiplines*/
+
+.skip-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .skip-links a {
+    padding: 1rem;
+    position: absolute;
+    background: black;
+    top: -5rem;
+    color: white;
+  }
+  
+  .skip-links a:focus{
+  top: 0;
+  }
+  
+  a:focus {
+    border: 3px solid red;
+    outline: none;
+  }
+/*footer section*/
+footer {
+    color: #c78b07;
+    background-color: black;
+    padding-bottom: 0.5em;
+    padding-top: 2em;
+    padding: 1em;
+}
+
+.copyright {
+    text-align: center;
+}
+
+/* desktop style*/
+
+@media screen and (min-width:760px){
+    .container {
+        width: 706px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:1200px){
+    .container {
+        width: 1168px;
+        padding: 0 16px;;
+        margin: 0 auto;
+    }
+}

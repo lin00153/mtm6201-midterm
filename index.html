@@ -1,51 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>TONY'S PIZZERIA</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <img src="images/lone-starfish-wide.jpg" alt="starfish-wide">
-            <div class="title">
-                TONY'S PIZZERIA
-            </div>
-            <div class="navigator">
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-            </div>
-        </div>
+        <nav role="navigation">
+            <div class="container">
+                <ul class="skip-links">
+                    <li><a href="#nav">skip to main nav</a></li>
+                    <li><a href="#main" aria-label="skip" class="skip">skip to main content</a></li>
+                </ul>
+                <div class="logo"> 
+                    <img src="images/pizzalogo.png" alt="logo">
+                </div>
+                <ul>
+                   <li class="current"><a href="index.html">Home</a></li> 
+                   <li><a href="aboutus.html">About Us</a></li> 
+                   <li><a href="contact.html">Contact</a></li> 
+                </ul>
+                <form>
+                    <input type="search">
+                    <button>
+                        &#128269;
+                    </button>
+                </form>
+            </div> <!--end container-->  
+        </nav>
+
+        <div class="header-welcome">
+            <div class="container">
+                <h1 role="heading">Welcome to Tony's Pizzeria</h1>
+                <p>We are an Italian pizza restaurant located in Ottawa, and now you can get a 30% off on each oder which reaches 40$!
+                    Also, free snacks are offered for each order, welcome to try them!
+                </p><br><br><br><br>      
+                <a href="#" class="button">Order Now ▶</a>
+                <!--h1, p, button-->
+            </div> <!--end container-->
+        </div>    
     </header>
 
-    <main>
-        <div class="container">
-            <h1>Why Choose Us?</h1>
-            <img src="" alt="">
-            <p>Our pizza use the 
-                traditional cold fermentation technology. 
-                We use ice water and 
-                flour, and the air-cooled refrigerator is used to store them at low temperature for at least 24 hours. 
-                <br></br>
-                The dough are artificially stretched to retain the wheat flavor at the bottom of the cakes to the greatest extent. 
-                In addition, the top cheese, salty meat, fresh vegetables and fruits come together.</p>
-            <p><q>Enrich Ingredients Provide Good Nutrition.</q></p>
-        </div>
+    <main role="main">
+        <section class="section-about">
+            <div class="container">
+                <div class="about-us-image">
+                    <img src="images/makingpizza.jpg" alt="Process of makingpizza" aria-details="process of making pizza">
+                </div>
+            
+                <div class="about-us-text">
+                    <h2>Why Choose Us?</h2>
+                    <p>Our pizza use the 
+                    traditional cold fermentation technology. 
+                    We use ice water and 
+                    flour, and the air-cooled refrigerator is used to store them at low temperature for at least 24 hours. 
+                    <br></br>
+                    The dough are artificially stretched to retain the wheat flavor at the bottom of the cakes to the greatest extent. 
+                    In addition, the top cheese, salty meat, fresh vegetables and fruits come together.</p>
+                    <p><q>Enrich Ingredients Provide Good Nutrition.</q></p>
+                </div><!--two inner div's, one with an img, other with a heading and some texts p-->
+            </div><!--end container-->
+        </section><!--end section-about-->
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="container">
-            <h2></h2>
-            <button class="Email">Email</button>
-            <button class="FB">Facebook</button>
-            <button class="Ins">Instagram</button>
+            <a href="#top">Back to top</a>
             <div class="footer">
-                <p class="copyright">&copy;Copyright Tony's Pizzeria, 2023<br><br>
-                All images are taken from Canva.</p>
+                <p class="copyright">&copy;Copyright Tony's Pizzeria, 2023. All images are taken from Canva.</p>
             </div>
         </div>
     </footer>
