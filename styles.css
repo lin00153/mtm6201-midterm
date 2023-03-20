@@ -169,14 +169,14 @@ nav .current a:visited {
 
 .header-welcome .button {
 	display: inline-block;
-    background-color:#c78b07;
-    color:black;
+    background-color:#B34216;
+    color:white;
     font-size: 20px;
     text-align: center;
     text-decoration: none;
 	padding: 24px;
 }
-/*about us*/
+/*about us page*/
 .section-about .container{
     background-color: #ffe6ac;
     height: 330px;  
@@ -196,7 +196,7 @@ nav .current a:visited {
     padding-right: 80px;
 }
 
-/*menu section*/
+/*menu section in about us page*/
 .section-menu {
     padding-left: 80px;
     padding-right: 80px;
@@ -293,12 +293,15 @@ footer {
     text-align: center;
 }
 
-/* desktop style*/
+/* desktop and tablet style*/
 
-@media screen and (min-width:760px){
+@media screen and (max-width:760px){
     .container {
         width: 706px;
         margin: 0 auto;
+    }
+    .map{
+        display: none;
     }
 }
 @media screen and (min-width:1200px){
@@ -308,3 +311,25 @@ footer {
         margin: 0 auto;
     }
 }
+/*animation when clicking button*/
+.header-welcome .button:hover {background-color:#6C6A03}
+
+.button:active {
+  background-color: #B34216;
+  box-shadow: 0 5px #ddd2d2;
+  transform: translateY(4px);
+}
+
+.pizza1 .button:hover, 
+.pizza2 .button:hover, 
+.pizza3 .button:hover{
+    background-color:#6C6A03}
+
+.pizza1 .button:active, 
+.pizza2 .button:active, 
+.pizza3 .button:active {
+  background-color: #B34216;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
